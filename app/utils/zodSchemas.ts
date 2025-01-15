@@ -43,3 +43,17 @@ export const invoiceSchema = z.object({
       })
     ).min(1, "Atleast one item is required")
 })
+
+export const emailTemplateSchema = z.object({
+  subject: z
+    .string()
+    .min(1, "Subject is required")
+    .max(255, "Subject cannot exceed 255 characters"),
+  body: z
+    .string()
+    .min(1, "Email body is required")
+    .max(10000, "Email body cannot exceed 10,000 characters"), // Adjust max length as per your requirements
+  userId: z
+    .string()
+    .min(1, "User ID is required") // Validates that userId is a non-empty string
+});

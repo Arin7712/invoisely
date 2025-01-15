@@ -1,7 +1,6 @@
 import prisma from "@/app/utils/db";
 import RequireUser from "@/app/utils/hooks";
 import { emailClient } from "@/app/utils/mailtrap";
-import { error } from "console";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request, { params }: { params: { invoiceId: string } }) {

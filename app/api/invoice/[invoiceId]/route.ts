@@ -73,7 +73,7 @@ export async function GET(request: Request, { params }: { params: { invoiceId: s
   pdf.text(`Date: ${new Intl.DateTimeFormat('en-US', {
     dateStyle: 'long'
   }).format(data.date)}`, 120, 45);
-  pdf.text(`Due Date: ${data.dueDate}`, 120, 50);
+  pdf.text(`Due Date: Net ${data.dueDate}`, 120, 50);
 
   // Item table header
   pdf.setFontSize(10);

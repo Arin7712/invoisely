@@ -3,6 +3,7 @@ import AvatarCircles from "@/components/ui/avatar-circles";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero(){
 
@@ -27,13 +28,15 @@ export function Hero(){
             </div>
             <div className="md:max-w-3xl max-w-xl md:text-center text-stone-300 text-lg">
               <p>
-              Take a back seat in your next Marketing Campaign and let AI do all the heavy lifting for you.
+              Take a back seat from the mannual systems and let Invoisely do the work for you.
               </p>
             </div>
 
             <div className="flex gap-6 items-center">
               <Button className="bg-neutral-900 border-zinc-800 border-[1px] px-6 text-lg py-5">
-                Start free trail
+                <Link href="/dashboard">
+                Go to dashboard
+                </Link>
               </Button>
               <Button className="bg-black text-white border-zinc-800 border-[1px] px-6 text-lg hover:text-white py-5">
                 Learn more

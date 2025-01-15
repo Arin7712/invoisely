@@ -94,7 +94,7 @@ export function EditInvoice({data, items} : iAppProps){
       };
     
       
-      const [subtotal, setSubtotal] = useState(0);
+  const [subtotal, setSubtotal] = useState(0);
   const [taxAmount, setTaxAmount] = useState(0);
   const [totalAfterTax, setTotalAfterTax] = useState(0);
 

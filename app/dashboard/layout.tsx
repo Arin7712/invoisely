@@ -45,14 +45,14 @@ export default async function DashBoardLayout({
             <div className="h-14 flex items-center border-b border-zinc-700 px-4 lg:h-[60px] lg:px-6">
               <Link href="/" className="flex items-center gap-2">
                 <Image
-                  src={Logo}
+                  src="/invoiselylogo.png"
                   alt="logo"
-                  className="size-7"
+                  className="size-7 rounded-md"
                   width={100}
                   height={100}
                 />
                 <p className="text-neutral-300 text-xl font-bold">
-                  Invoice <span className="text-gray1">Arin</span>
+                  Invoisely 
                 </p>
               </Link>
             </div>

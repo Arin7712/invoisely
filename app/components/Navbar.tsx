@@ -14,7 +14,7 @@ import {
 
 export function Navbar() {
   return (
-    <div className="flex px-[4rem] w-full items-center z-50 top-0 fixed justify-between py-5 bg-black bg-opacity-45">
+    <div className="flex px-6 md:px-[4rem] w-full items-center z-50 top-0 fixed justify-between py-5 bg-black bg-opacity-45">
       <h1 className="font-bold text-neutral-300 text-2xl">Invoisely</h1>
 
       <div className="md:block hidden">
@@ -27,7 +27,7 @@ export function Navbar() {
         </ul>
       </div>
 
-      <div>
+      <div className="ml-auto md:ml-0">
         <Button className="bg-matt2 border-zinc-700 border-[1px]">Login</Button>
       </div>
 
